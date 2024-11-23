@@ -86,6 +86,9 @@ class PhysicsEngine:
         
         # Project ball onto line
         line_length_sq = line_dx * line_dx + line_dy * line_dy
+        if line_length_sq < 0.0001:  # Check for extremely short/zero-length ground
+            return
+            
         t = max(0, min(1, (dx * line_dx + dy * line_dy) / line_length_sq))
         
         # Closest point on line
