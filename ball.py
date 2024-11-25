@@ -6,8 +6,8 @@ class Ball:
         self.y = y
         self.radius = radius
         self.mass = mass
-        self.vx = 0  # velocity in x direction
-        self.vy = 0  # velocity in y direction
+        self.vx = 0
+        self.vy = 0
         self.base_color = "red"
         
     def update(self, dt):
