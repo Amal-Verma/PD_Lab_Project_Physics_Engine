@@ -12,3 +12,4 @@ class Ground:
         
     def draw(self, canvas):
         return canvas.create_line(self.x1, self.y1, self.x2, self.y2, width=3, fill="black")
+    
